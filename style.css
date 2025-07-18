@@ -9,3 +9,130 @@
   font-weight:normal;
   font-style: normal;
 }
+
+/* shared style.. */
+.display-flax{
+    display: flex;
+}
+.bg-primary{
+ background-color:rgba(255, 163, 14, 0.1);   
+}
+.main{
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+/* header style */
+   .navber, .banner{
+    max-width: 1440px;
+    margin: 0px auto ;
+   }
+  
+
+/* navber section style */
+.navber{
+    justify-content: space-between;
+    align-items: center;
+}
+.brand{
+    color:rgba(19, 19, 19, 1);
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+.navber-itam{
+    list-style: none;
+}
+.navber-link{
+    text-decoration: none;
+    margin-right: 35px;
+    color: rgba(66, 66, 66, 1);
+    font-size: 1.1rem;
+    font-weight: 500px;
+}
+
+/* banner-section */
+ .banner-container{
+    max-width: 860px;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 45px;
+   }
+
+.banner-tittal{
+    color:rgba(19, 19, 19, 1) ;
+    font-weight: bold;
+    font-size: 3.6rem;
+}
+.banner-description{
+    color: rgba(114, 114, 114, 1);
+    font-size:1rem;
+    font-weight:500;
+}
+
+.btn-primary{
+    background-color:#FF900E;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 10px;
+}
+.banner-image img{
+    max-width: 100%;
+}
+/* team section */
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+    margin-right: 130px;
+}
+.team-section{
+    margin-top: 80px;
+}
+.our-features{
+   max-width: 530px;
+   margin-top: 200px;
+}
+.features-tital{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.features-description{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(114, 114, 114, 1);
+    margin-bottom: 22px;
+    
+}
+#quick-list{
+    color: rgba(114, 114, 114, 1);
+    font-weight: 500;
+    font-size:3rem;
+}
+#featur{
+    color: #FF900E;
+}
+
+/* responsive layout */
+
+@media screen and (max-width:576px) {
+
+    .navber, .navber-links{
+        flex-direction: column;
+        width: 100%;
+    } 
+     .navber-links{
+        text-align: center;
+    }
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+     .navber, .navber-links{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navber-links{
+        text-align: center;
+    }
+}
