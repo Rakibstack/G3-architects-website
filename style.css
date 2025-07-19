@@ -197,8 +197,8 @@
     font-size: 1.5rem;
     margin-top:-120px;
     margin-left:-76px;
-
 }
+
 #experience{
     font-size: 4rem;
     font-weight: 700;
@@ -266,6 +266,20 @@
         padding: 5px;
     }
 }
+/* footer section */
+
+.footer-tital{
+    width: 1440px;
+    height: 100px;
+    background-color: #FFF4E7;
+    margin:160px auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
 
 @media screen and (min-width:576px) and (max-width:992px) {
      .team-section{
@@ -298,6 +312,9 @@
         width: 100%;
        
     } 
+    .footer-tital{
+        width: 100%;
+    }
   }
 @media screen and (min-width:576px) and (max-width:992px) {
        .facts-containar{
@@ -309,6 +326,9 @@
             gap: 40px;
             margin-left: 50px;
         }
+        .footer-tital{
+            width: 100%;
+        }
 }
 
 /* features section layout */
@@ -318,18 +338,21 @@
         flex-direction: column;
         width: 100%;
     }
-}
-.features-image img{
-    max-width: 100%;
-}
-#button{
+    #button{
     margin-top: 20px;
     margin-left: 20px;
     
 }
+.features-image img{
+    max-width: 100%;
+}
+
 .features-description{
     width: 100%;
 }
+}
+
+
 @media screen and (min-width:576px) and (max-width:992px) {
      .features{
         flex-direction: column;
