@@ -177,7 +177,7 @@
     color:rgba(114, 114, 114, 1);
 }
 .features{
-    gap: 95px;
+    gap: 120px;
     margin-top: 120px;
 }
 .features-card{
@@ -191,6 +191,17 @@
     font-weight: 600;
     color: rgba(19, 19, 19, 1);
     margin: 12px;
+}
+#button{
+    padding: 40px 38px;
+    font-size: 1.5rem;
+    margin-top:-120px;
+    margin-left:-76px;
+
+}
+#experience{
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 /* our sopnspors section  */
@@ -298,4 +309,30 @@
             gap: 40px;
             margin-left: 50px;
         }
+}
+
+/* features section layout */
+
+@media screen and (max-width:576px) {
+    .features{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+.features-image img{
+    max-width: 100%;
+}
+#button{
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+.features-description{
+    width: 100%;
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+     .features{
+        flex-direction: column;
+        width: 100%;
+    }
 }
