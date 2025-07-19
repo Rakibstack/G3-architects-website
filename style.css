@@ -160,6 +160,30 @@
     font-size: 1.2rem;
     margin: 8px;
 }
+/* our sopnspors section  */
+.sopnspors{
+    max-width: 542px;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 100px;
+}
+.sponspors-tital{
+    color: rgba(19, 19, 19, 1);
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.ponspors-description{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(114, 114, 114, 1);
+}
+.sponsors-company{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-top:60px ;
+    margin-bottom: 60px;
+    filter:grayscale(100%) ;
+}
 
 /* responsive layout */
 
@@ -214,4 +238,31 @@
         padding: 0px;
         text-align: center;
     }
+}
+  /* fact section responsive */
+  @media screen and (max-width:576px) {
+    .sponsors-company, .facts-containar{
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        justify-content: center;
+        margin-left: 50px;
+    }
+    .sopnspors{
+        width: 100%;
+    }
+    .fact-description{
+        width: 100%;
+       
+    } 
+  }
+@media screen and (min-width:576px) and (max-width:992px) {
+       .facts-containar{
+        grid-template-columns: repeat(2,1fr);
+       margin-left: 40px;
+        }
+        .sponsors-company{
+            grid-template-columns: repeat(3,1fr);
+            gap: 40px;
+            margin-left: 50px;
+        }
 }
